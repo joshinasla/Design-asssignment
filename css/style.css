@@ -409,22 +409,21 @@ footer {
   margin-top: 31px;
 }
 @media (min-width: 768px) {
-  footer {
-    display: flex;
-    padding-bottom: 31px;
-  }
-
   .footer-text {
     text-align: left;
     margin-left: 39px;
   }
 }
 @media (min-width: 1200px) {
+  footer {
+    display: flex;
+    padding-bottom: 31px;
+  }
   .footer-text {
     text-align: left;
     margin-left: 165px;
   }
   .copyright {
-    float: right;
+    text-align: right;
   }
 }
