@@ -15,6 +15,7 @@ body {
   height: 4242px;
   background: #cccccc;
   position: relative;
+  width: 100%;
 }
 .nav-bar {
   position: sticky absolute;
