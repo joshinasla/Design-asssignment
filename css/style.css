@@ -12,16 +12,17 @@ body {
   font-size: 16px;
 }
 .container {
-  height: 4242px;
   background: #cccccc;
   position: relative;
 }
 .nav-bar {
-  position: sticky absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.4);
-  height: 22px;
   color: white;
-  padding: 15px;
+  padding: 15px 15px 25px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .side-toggle {
   float: right;
@@ -47,20 +48,18 @@ a {
   color: #ffffff;
 }
 
-.header {
-  width: auto;
-  height: 664px;
+.banner {
+  padding-top: 62px;
+  height: 602px;
   background-image: url("img/HEADER.png");
 }
 
 .header-content {
-  margin-top: 127px;
-  margin-left: 17px;
+  margin-top: 112px;
+  padding: 0 15px;
 }
 
 .content-title {
-  width: 345px;
-  height: 188px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -70,7 +69,6 @@ a {
 }
 
 .content-body {
-  width: 345px;
   height: 123px;
   font-family: "Roboto";
   font-style: normal;
@@ -82,129 +80,79 @@ a {
 }
 
 .watch-video-button {
-  position: absolute;
   width: 179px;
-  height: 54px;
   background: #f44336;
   box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
   border-radius: 3px;
   display: inline-block;
   text-align: center;
   margin-top: 25px;
-}
-
-.watch-video-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  padding: 19px 15px 17px;
 }
 
 .icon-play {
   width: 15px;
-  height: 18px;
-  line-height: 21px;
   color: #ffffff;
+  vertical-align: middle;
 }
 
 .watch-video-text {
-  width: 91px;
-  height: 17px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  vertical-align: middle;
 }
 
 .container-body {
-  position: absolute;
-  width: calc(100% - 20px);
-  height: 3518px;
   background: #ffffff;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 2px 24px rgba(0, 0, 0, 0.14);
   border-radius: 6px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: -60px;
+  padding: 0 16px;
 }
 
 .top-content {
-  position: absolute;
-  width: calc(100% - 20px);
-  margin-top: 94px;
-  margin-left: 10px;
+  padding-top: 94px;
+  text-align: center;
 }
 .heading {
-  position: absolute;
-  text-align: center;
-  height: 43px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 36.4px;
+  font-size: 36px;
   line-height: 43px;
   color: #3c4858;
   left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 .top-paragraph {
-  position: absolute;
-  width: 368px;
-  height: 139px;
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 17.5px;
   line-height: 21px;
   text-align: center;
   color: #999999;
-  margin-top: 45px;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%);
+  margin-top: 38px;
+  margin-bottom: 162px;
+  max-width: 723px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-container {
 }
 
 .feature {
-  position: absolute;
-  margin-top: 324px;
-  left: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.icon1 {
-  position: absolute;
-  width: 328px;
-  height: 201px;
-}
-
-.icon2 {
-  position: absolute;
-  width: 328px;
-  height: 201px;
-  margin-top: 300px;
-}
-
-.icon3 {
-  position: absolute;
-  width: 328px;
-  height: 201px;
-  margin-top: 600px;
+  margin-bottom: 108px;
 }
 .icon {
   width: 70px;
-  height: 70px;
-  margin-left: 50%;
-  transform: translate(-50%);
 }
 
 .feature-heading {
-  position: absolute;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -213,13 +161,10 @@ a {
   color: #3c4858;
   text-align: center;
   left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%);
   margin-top: 31px;
 }
 
-.icon-text {
-  position: absolute;
+.feature-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -227,11 +172,24 @@ a {
   line-height: 16px;
   text-align: center;
   color: #999999;
-  margin-top: 73px;
+  margin-top: 18px;
+}
+@media (min-width: 1200px) {
+  .feature-container {
+    display: flex;
+    justify-content: center;
+  }
+  .feature-container:first-child {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .feature {
+    padding: 0 31px;
+    margin-left: 62px;
+  }
 }
 
 .mid-content {
-  position: absolute;
   width: calc(100% - 20px);
   margin-top: 1394px;
   display: flex;
