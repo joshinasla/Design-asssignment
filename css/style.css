@@ -108,6 +108,19 @@ a {
   height: 490px;
   background-size: 100%;
 }
+@media (min-width: 768px) {
+  .banner {
+    height: 423px;
+    background-image: url("img/tablet.png");
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    padding-top: 207px;
+    height: 519px;
+    background-image: url("img/Rectangle.png");
+  }
+}
 
 .header-content {
   padding: 0 15px;
