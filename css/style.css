@@ -467,12 +467,15 @@ footer {
   color: #333333;
   margin-top: 33px;
 }
+.footer-text span {
+  padding-right: 33px;
+}
 .copyright {
   height: 17px;
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 11px;
   text-align: center;
   color: #000000;
@@ -486,14 +489,20 @@ footer {
 }
 @media (min-width: 1200px) {
   footer {
-    display: flex;
-    padding-bottom: 31px;
-  }
-  .footer-text {
-    text-align: left;
-    margin-left: 165px;
+    padding-bottom: 33px;
+    left: 0;
+    right: 0;
+    color: #333333;
+    display: inline-block;
   }
   .copyright {
+    float: right;
     text-align: right;
+    margin-right: 153px;
+  }
+  .footer-text {
+    float: left;
+    text-align: left;
+    margin-left: 165px;
   }
 }
