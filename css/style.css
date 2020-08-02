@@ -481,16 +481,17 @@ footer {
   text-align: center;
   color: #000000;
   margin-top: 31px;
+  padding-bottom: 18px;
 }
 @media (min-width: 768px) {
   .footer-text {
     text-align: left;
     margin-left: 39px;
+    padding-bottom: 26px;
   }
 }
 @media (min-width: 1200px) {
   footer {
-    padding-bottom: 33px;
     left: 0;
     right: 0;
     color: #333333;
@@ -505,5 +506,6 @@ footer {
     float: left;
     text-align: left;
     margin-left: 165px;
+    padding-bottom: 33px;
   }
 }
