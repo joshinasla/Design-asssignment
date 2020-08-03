@@ -106,7 +106,7 @@ a {
   padding-top: 174px;
   background-image: url("img/back.png");
   height: 490px;
-  background-size: 100%;
+  background-size: cover;
 }
 @media (min-width: 768px) {
   .banner {
