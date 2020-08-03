@@ -11,7 +11,7 @@ body {
 .default {
   font-size: 16px;
 }
-.container {
+.main-container-wrapper {
   background: #cccccc;
   position: relative;
 }
@@ -117,12 +117,11 @@ a {
 @media (min-width: 1200px) {
   .banner {
     padding-top: 207px;
-    height: 519px;
     background-image: url("img/Rectangle.png");
   }
 }
 
-.header-content {
+.banner-content {
   padding: 0 15px;
 }
 
@@ -171,10 +170,10 @@ a {
   vertical-align: middle;
 }
 @media (min-width: 1200px) {
-  .banner-content {
+  .banner-content-wrapper {
     display: flex;
   }
-  .header-content {
+  .banner-content {
     width: 50%;
     display: inline-block;
     padding: 0px 0px 0px 136px;
@@ -470,6 +469,9 @@ footer {
 }
 .footer-text span {
   padding-right: 33px;
+}
+.footer-text a {
+  color: #333333;
 }
 .copyright {
   height: 17px;
