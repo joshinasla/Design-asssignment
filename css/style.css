@@ -478,13 +478,15 @@ input:focus {
   .form-first-line-content {
     display: flex;
     justify-content: center;
+    margin: 0 -15px;
   }
   .content-name {
-    width: 49.9999%;
+    padding: 0 15px;
+    width: 50%;
   }
   .content-email {
-    padding-left: 29px;
-    width: 49.9999%;
+    padding: 0 15px;
+    width: 50%;
   }
 }
 .send-message-button {
