@@ -26,7 +26,6 @@ body {
   background-image: url("img/back.png");
   height: 490px;
   background-size: cover;
-  position: relative;
 }
 .main-header {
   position: fixed;
