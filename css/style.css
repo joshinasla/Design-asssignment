@@ -66,8 +66,11 @@ body {
 @media (min-width: 1200px) {
   .nav-bar {
     position: absolute;
-    padding: 39px 0px 0px 150px;
+    padding: 39px;
     background-color: transparent;
+    max-width: 1098px;
+    left: 0;
+    right: 0;
   }
   .nav-icon:last-child {
     padding-right: 162px;
@@ -172,11 +175,13 @@ a {
 @media (min-width: 1200px) {
   .banner-content-wrapper {
     display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1128px;
   }
   .banner-content {
     width: 50%;
     display: inline-block;
-    padding: 0px 0px 0px 136px;
   }
 }
 .container-body {
@@ -255,6 +260,9 @@ a {
   .feature-container {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1128px;
   }
   .feature-container:first-child {
     padding-left: 0;
@@ -262,7 +270,6 @@ a {
   }
   .feature {
     padding: 0 31px;
-    margin-left: 62px;
   }
 }
 
@@ -364,6 +371,9 @@ h4 {
   .team-container {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1128px;
   }
   .team-container:first-child {
     padding-left: 0;
@@ -371,7 +381,6 @@ h4 {
   }
   .team-member {
     padding: 0 31px;
-    margin-left: 39px;
   }
 }
 
@@ -400,13 +409,16 @@ h4 {
   color: #999999;
   left: 10%;
 }
-
+input:focus {
+  border-color: #9c27b0;
+}
 .input-line {
-  padding: 7px;
+  padding: 7px 0px;
   display: block;
   border: none;
   border-bottom: 1px solid #ccc;
   width: 100%;
+  outline: none;
 }
 .content-name {
   margin-top: 47px;
